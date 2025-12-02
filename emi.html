@@ -1,92 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EMI Calculator | ToolStation.world</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 20px; background: #f0f0f0; }
-        .container { max-width: 800px; margin: 0 auto; }
-        header { background: white; padding: 20px; border-radius: 10px; margin-bottom: 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-        .logo { color: #4f46e5; font-size: 24px; font-weight: bold; }
-        nav { margin-top: 10px; }
-        nav a { color: #333; text-decoration: none; margin-right: 20px; }
-        nav a:hover { color: #4f46e5; }
-        .tool-box { background: white; padding: 30px; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-        h1 { color: #4f46e5; text-align: center; margin-bottom: 10px; }
-        p { text-align: center; color: #666; margin-bottom: 30px; }
-        input { width: 100%; padding: 15px; border: 2px solid #ddd; border-radius: 5px; font-size: 16px; margin-bottom: 15px; }
-        input:focus { border-color: #4f46e5; outline: none; }
-        .btn { padding: 15px 30px; background: #4f46e5; color: white; border: none; border-radius: 5px; cursor: pointer; font-size: 16px; width: 100%; }
-        .btn:hover { background: #3f36d4; }
-        #result { margin-top: 30px; padding: 20px; background: #f8f9fa; border-radius: 10px; display: none; }
-        .emi-value { font-size: 36px; font-weight: bold; color: #4f46e5; text-align: center; }
-        .details { margin-top: 20px; }
-        .detail-row { display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid #ddd; }
-        footer { background: #333; color: white; padding: 20px; border-radius: 10px; margin-top: 30px; text-align: center; }
-    </style>
+<title>EMI Calculator</title>
+<style>
+body{margin:0;padding:20px;font-family:Arial;background:#f5f5f5}
+.box{max-width:600px;margin:0 auto;background:white;padding:30px;border-radius:10px}
+h1{color:#4f46e5;text-align:center}
+input{width:100%;padding:10px;border:1px solid #ddd;border-radius:5px;margin-bottom:15px}
+button{width:100%;padding:15px;background:#4f46e5;color:white;border:none;border-radius:5px;cursor:pointer}
+button:hover{background:#3f36d4}
+#result{margin-top:20px;padding:20px;background:#f8f8f8;border-radius:5px;display:none}
+.emi{font-size:36px;font-weight:bold;color:#4f46e5;text-align:center}
+.row{display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid #ddd}
+nav{text-align:center;margin-bottom:20px}
+nav a{margin:0 15px;color:#333;text-decoration:none}
+</style>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <div class="logo">🛠️ ToolStation</div>
-            <nav>
-                <a href="../index.html">Home</a>
-                <a href="../about.html">About</a>
-                <a href="../contact.html">Contact</a>
-            </nav>
-        </header>
+<nav>
+<a href="../index.html">Home</a>
+<a href="../about.html">About</a>
+<a href="../contact.html">Contact</a>
+</nav>
 
-        <div class="tool-box">
-            <h1>💰 EMI Calculator</h1>
-            <p>Calculate your monthly loan EMI with detailed breakdown</p>
-            
-            <input type="number" id="loanAmount" placeholder="Loan Amount" step="1000">
-            <input type="number" id="interestRate" placeholder="Interest Rate (% per annum)" step="0.1">
-            <input type="number" id="loanTenure" placeholder="Loan Tenure (months)" step="1">
-            
-            <button class="btn" onclick="calculateEMI()">Calculate EMI</button>
-            
-            <div id="result">
-                <div class="emi-value" id="emiValue"></div>
-                <div class="details">
-                    <div class="detail-row">
-                        <span>Total Interest:</span>
-                        <span id="totalInterest"></span>
-                    </div>
-                    <div class="detail-row">
-                        <span>Total Amount:</span>
-                        <span id="totalAmount"></span>
-                    </div>
-                </div>
-            </div>
-        </div>
+<div class="box">
+<h1>💰 EMI Calculator</h1>
+<input type="number" id="amount" placeholder="Loan Amount">
+<input type="number" id="rate" placeholder="Interest Rate (% per year)">
+<input type="number" id="tenure" placeholder="Tenure (months)">
+<button onclick="calcEMI()">Calculate EMI</button>
+<div id="result">
+<div class="emi" id="emi"></div>
+<div class="row"><span>Total Interest:</span><span id="interest"></span></div>
+<div class="row"><span>Total Amount:</span><span id="total"></span></div>
+</div>
+</div>
 
-        <footer>
-            <p>&copy; 2024 ToolStation.world. All rights reserved.</p>
-        </footer>
-    </div>
-
-    <script>
-        function calculateEMI() {
-            const principal = parseFloat(document.getElementById('loanAmount').value);
-            const rate = parseFloat(document.getElementById('interestRate').value) / 12 / 100;
-            const tenure = parseFloat(document.getElementById('loanTenure').value);
-            
-            if (!principal || !rate || !tenure) {
-                alert('Please fill all fields');
-                return;
-            }
-            
-            const emi = (principal * rate * Math.pow(1 + rate, tenure)) / (Math.pow(1 + rate, tenure) - 1);
-            const totalAmount = emi * tenure;
-            const totalInterest = totalAmount - principal;
-            
-            document.getElementById('emiValue').textContent = '₹' + emi.toFixed(0);
-            document.getElementById('totalInterest').textContent = '₹' + totalInterest.toFixed(0);
-            document.getElementById('totalAmount').textContent = '₹' + totalAmount.toFixed(0);
-            document.getElementById('result').style.display = 'block';
-        }
-    </script>
+<script>
+function calcEMI() {
+    var P = parseFloat(document.getElementById('amount').value);
+    var R = parseFloat(document.getElementById('rate').value) / 12 / 100;
+    var N = parseFloat(document.getElementById('tenure').value);
+    
+    if (!P || !R || !N) return;
+    
+    var emi = (P * R * Math.pow(1 + R, N)) / (Math.pow(1 + R, N) - 1);
+    var total = emi * N;
+    var interest = total - P;
+    
+    document.getElementById('emi').textContent = '₹' + Math.round(emi);
+    document.getElementById('interest').textContent = '₹' + Math.round(interest);
+    document.getElementById('total').textContent = '₹' + Math.round(total);
+    document.getElementById('result').style.display = 'block';
+}
+</script>
 </body>
 </html>

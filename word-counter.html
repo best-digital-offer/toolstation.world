@@ -1,108 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Word Counter | ToolStation.world</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 20px; background: #f0f0f0; }
-        .container { max-width: 800px; margin: 0 auto; }
-        header { background: white; padding: 20px; border-radius: 10px; margin-bottom: 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-        .logo { color: #4f46e5; font-size: 24px; font-weight: bold; }
-        nav { margin-top: 10px; }
-        nav a { color: #333; text-decoration: none; margin-right: 20px; }
-        nav a:hover { color: #4f46e5; }
-        .tool-box { background: white; padding: 30px; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-        h1 { color: #4f46e5; text-align: center; margin-bottom: 10px; }
-        p { text-align: center; color: #666; margin-bottom: 30px; }
-        textarea { width: 100%; height: 200px; padding: 15px; border: 2px solid #ddd; border-radius: 5px; font-size: 16px; }
-        textarea:focus { border-color: #4f46e5; outline: none; }
-        .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 15px; margin-top: 20px; }
-        .stat { background: #f8f9fa; padding: 20px; border-radius: 8px; text-align: center; }
-        .stat-number { font-size: 28px; font-weight: bold; color: #4f46e5; }
-        .stat-label { color: #666; margin-top: 5px; }
-        footer { background: #333; color: white; padding: 20px; border-radius: 10px; margin-top: 30px; text-align: center; }
-    </style>
+<title>Word Counter</title>
+<style>
+body{margin:0;padding:20px;font-family:Arial;background:#f5f5f5}
+.box{max-width:600px;margin:0 auto;background:white;padding:30px;border-radius:10px}
+h1{color:#4f46e5;text-align:center}
+textarea{width:100%;height:150px;padding:10px;border:1px solid #ddd;border-radius:5px}
+.stats{display:grid;grid-template-columns:1fr 1fr 1fr;gap:15px;margin-top:20px}
+.stat{background:#f8f8f8;padding:15px;text-align:center;border-radius:5px}
+.num{font-size:24px;font-weight:bold;color:#4f46e5}
+nav{text-align:center;margin-bottom:20px}
+nav a{margin:0 15px;color:#333;text-decoration:none}
+</style>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <div class="logo">🛠️ ToolStation</div>
-            <nav>
-                <a href="../index.html">Home</a>
-                <a href="../about.html">About</a>
-                <a href="../contact.html">Contact</a>
-            </nav>
-        </header>
+<nav>
+<a href="../index.html">Home</a>
+<a href="../about.html">About</a>
+<a href="../contact.html">Contact</a>
+</nav>
 
-        <div class="tool-box">
-            <h1>📝 Word Counter</h1>
-            <p>Count words, characters, sentences, and paragraphs instantly</p>
-            
-            <textarea id="textInput" placeholder="Type or paste your text here..."></textarea>
-            
-            <div class="stats">
-                <div class="stat">
-                    <div class="stat-number" id="wordCount">0</div>
-                    <div class="stat-label">Words</div>
-                </div>
-                <div class="stat">
-                    <div class="stat-number" id="charCount">0</div>
-                    <div class="stat-label">Characters</div>
-                </div>
-                <div class="stat">
-                    <div class="stat-number" id="charNoSpaceCount">0</div>
-                    <div class="stat-label">Characters (no spaces)</div>
-                </div>
-                <div class="stat">
-                    <div class="stat-number" id="sentenceCount">0</div>
-                    <div class="stat-label">Sentences</div>
-                </div>
-                <div class="stat">
-                    <div class="stat-number" id="paragraphCount">0</div>
-                    <div class="stat-label">Paragraphs</div>
-                </div>
-                <div class="stat">
-                    <div class="stat-number" id="readingTime">0</div>
-                    <div class="stat-label">Reading Time (min)</div>
-                </div>
-            </div>
-        </div>
+<div class="box">
+<h1>📝 Word Counter</h1>
+<textarea id="text" placeholder="Type your text here..."></textarea>
 
-        <footer>
-            <p>&copy; 2024 ToolStation.world. All rights reserved.</p>
-        </footer>
-    </div>
+<div class="stats">
+<div class="stat">
+<div class="num" id="words">0</div>
+<div>Words</div>
+</div>
+<div class="stat">
+<div class="num" id="chars">0</div>
+<div>Characters</div>
+</div>
+<div class="stat">
+<div class="num" id="sentences">0</div>
+<div>Sentences</div>
+</div>
+</div>
+</div>
 
-    <script>
-        const textInput = document.getElementById('textInput');
-        const wordCount = document.getElementById('wordCount');
-        const charCount = document.getElementById('charCount');
-        const charNoSpaceCount = document.getElementById('charNoSpaceCount');
-        const sentenceCount = document.getElementById('sentenceCount');
-        const paragraphCount = document.getElementById('paragraphCount');
-        const readingTime = document.getElementById('readingTime');
-
-        textInput.addEventListener('input', updateStats);
-
-        function updateStats() {
-            const text = textInput.value;
-            
-            const words = text.trim() === '' ? 0 : text.trim().split(/\s+/).length;
-            wordCount.textContent = words;
-            
-            charCount.textContent = text.length;
-            charNoSpaceCount.textContent = text.replace(/\s/g, '').length;
-            
-            const sentences = text.trim() === '' ? 0 : text.split(/[.!?]+/).filter(s => s.trim().length > 0).length;
-            sentenceCount.textContent = sentences;
-            
-            const paragraphs = text.trim() === '' ? 0 : text.split(/\n\s*\n/).filter(p => p.trim().length > 0).length;
-            paragraphCount.textContent = paragraphs;
-            
-            const minutes = Math.ceil(words / 200);
-            readingTime.textContent = minutes;
-        }
-    </script>
+<script>
+document.getElementById('text').addEventListener('input', function() {
+    var text = this.value;
+    var words = text.trim() ? text.trim().split(/\s+/).length : 0;
+    var chars = text.length;
+    var sentences = text.trim() ? text.split(/[.!?]+/).filter(s => s.trim()).length : 0;
+    
+    document.getElementById('words').textContent = words;
+    document.getElementById('chars').textContent = chars;
+    document.getElementById('sentences').textContent = sentences;
+});
+</script>
 </body>
 </html>
