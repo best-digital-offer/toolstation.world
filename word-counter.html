@@ -88,25 +88,18 @@
         function updateStats() {
             const text = textInput.value;
             
-            // Word count
             const words = text.trim() === '' ? 0 : text.trim().split(/\s+/).length;
             wordCount.textContent = words;
             
-            // Character count
             charCount.textContent = text.length;
-            
-            // Character count without spaces
             charNoSpaceCount.textContent = text.replace(/\s/g, '').length;
             
-            // Sentence count
             const sentences = text.trim() === '' ? 0 : text.split(/[.!?]+/).filter(s => s.trim().length > 0).length;
             sentenceCount.textContent = sentences;
             
-            // Paragraph count
             const paragraphs = text.trim() === '' ? 0 : text.split(/\n\s*\n/).filter(p => p.trim().length > 0).length;
             paragraphCount.textContent = paragraphs;
             
-            // Reading time (200 words per minute)
             const minutes = Math.ceil(words / 200);
             readingTime.textContent = minutes;
         }
