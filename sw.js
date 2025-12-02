@@ -3,22 +3,22 @@
 
 const CACHE_NAME = 'toolstation-v1';
 const urlsToCache = [
-  '/',
-  '/assets/style.css',
-  '/assets/main.js',
-  '/about.html',
-  '/contact.html',
-  '/privacy.html',
-  '/terms.html',
-  '/tools/word-counter.html',
-  '/tools/text-case.html',
-  '/tools/qr.html',
-  '/tools/image-compress.html',
-  '/tools/jpg-png.html',
-  '/tools/image-to-pdf.html',
-  '/tools/bmi.html',
-  '/tools/emi.html',
-  '/tools/youtube-thumb.html'
+  './',
+  './assets/style.css',
+  './assets/main.js',
+  './about.html',
+  './contact.html',
+  './privacy.html',
+  './terms.html',
+  './tools/word-counter.html',
+  './tools/text-case.html',
+  './tools/qr.html',
+  './tools/image-compress.html',
+  './tools/jpg-png.html',
+  './tools/image-to-pdf.html',
+  './tools/bmi.html',
+  './tools/emi.html',
+  './tools/youtube-thumb.html'
 ];
 
 // Install event - cache resources
