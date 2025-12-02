@@ -1,215 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><base href="../"><style>* { margin: 0; padding: 0; box-sizing: border-box; }body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; color: #333; background: #f5f5f5; }.container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }header { background: white; box-shadow: 0 2px 10px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 100; }.header-content { display: flex; justify-content: space-between; align-items: center; padding: 1rem 0; }.logo { font-size: 1.5rem; font-weight: 700; color: #4f46e5; }.logo a { color: inherit; text-decoration: none; }nav { display: flex; gap: 2rem; }nav a { color: #333; text-decoration: none; font-weight: 500; transition: color 0.3s; }nav a:hover { color: #4f46e5; }.tool-container { max-width: 800px; margin: 2rem auto; padding: 0 20px; }.tool-header { text-align: center; margin-bottom: 2rem; background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }.tool-header h1 { font-size: 2.5rem; color: #4f46e5; margin-bottom: 0.5rem; }.tool-header p { color: #666; font-size: 1.1rem; }.ad-container, .ad-placeholder { background: #f9f9f9; border: 2px dashed #ddd; padding: 2rem; text-align: center; margin: 2rem 0; border-radius: 8px; color: #999; }.tool-content { background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); margin-bottom: 2rem; }.form-group { margin-bottom: 1.5rem; }.form-group label { display: block; margin-bottom: 0.5rem; font-weight: 600; color: #333; }.form-group input, .form-group textarea, .form-group select { width: 100%; padding: 0.75rem; border: 2px solid #e5e5e5; border-radius: 8px; font-size: 1rem; font-family: inherit; transition: border-color 0.3s; }.form-group input:focus, .form-group textarea:focus, .form-group select:focus { outline: none; border-color: #4f46e5; }.form-group textarea { min-height: 150px; resize: vertical; }.btn { padding: 0.75rem 2rem; background: #4f46e5; color: white; border: none; border-radius: 8px; font-size: 1rem; font-weight: 600; cursor: pointer; transition: background 0.3s; text-decoration: none; display: inline-block; }.btn:hover { background: #4338ca; }.btn-secondary { background: #06b6d4; }.btn-group { display: flex; gap: 1rem; flex-wrap: wrap; }.seo-content { background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); margin: 2rem 0; }.seo-content h2 { color: #333; margin-bottom: 1rem; }.seo-content h3 { color: #4f46e5; margin: 1.5rem 0 1rem; }.seo-content p { margin-bottom: 1rem; line-height: 1.8; color: #666; }.seo-content ul { margin: 1rem 0 1rem 2rem; }.seo-content li { margin-bottom: 0.5rem; color: #666; }.faq-section { background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); margin-top: 2rem; }.faq-section h2 { font-size: 2rem; margin-bottom: 2rem; color: #333; }.faq-item { margin-bottom: 1.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid #e5e5e5; }.faq-item:last-child { border-bottom: none; }.faq-item h3 { color: #4f46e5; margin-bottom: 0.5rem; font-size: 1.25rem; }.faq-item p { color: #666; line-height: 1.6; }footer { background: #333; color: white; padding: 3rem 0 1rem; margin-top: 4rem; }.footer-content { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-bottom: 2rem; }.footer-section h4 { margin-bottom: 1rem; font-size: 1.25rem; }.footer-section ul { list-style: none; }.footer-section ul li { margin-bottom: 0.5rem; }.footer-section a { color: rgba(255, 255, 255, 0.8); text-decoration: none; transition: color 0.3s; }.footer-section a:hover { color: white; }.footer-bottom { text-align: center; padding-top: 2rem; border-top: 1px solid rgba(255, 255, 255, 0.1); color: rgba(255, 255, 255, 0.6); }@media (max-width: 768px) { .header-content { flex-direction: column; gap: 1rem; } nav { gap: 1rem; } .btn-group { flex-direction: column; } .btn { width: 100%; } .tool-header h1 { font-size: 2rem; } }</style>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Free EMI calculator. Calculate loan EMI, total interest, and payment breakdown instantly. Perfect for home loans, car loans, and personal loans.">
-    <meta name="keywords" content="EMI calculator, loan calculator, monthly payment calculator, interest calculator, home loan EMI">
-    <title>Free EMI Calculator - Calculate Loan EMI Online | ToolStation.world</title>
-    <link rel="stylesheet" href../assets/style.css">
+    <title>EMI Calculator | ToolStation.world</title>
     <style>
-* { margin: 0; padding: 0; box-sizing: border-box; }
-body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; color: #333; background: #f5f5f5; }
-.container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
-header { background: white; box-shadow: 0 2px 10px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 100; }
-.header-content { display: flex; justify-content: space-between; align-items: center; padding: 1rem 0; }
-.logo { font-size: 1.5rem; font-weight: 700; color: #4f46e5; }
-.logo a { color: inherit; text-decoration: none; }
-nav { display: flex; gap: 2rem; }
-nav a { color: #333; text-decoration: none; font-weight: 500; transition: color 0.3s; }
-nav a:hover { color: #4f46e5; }
-.tool-container { max-width: 800px; margin: 2rem auto; padding: 0 20px; }
-.tool-header { text-align: center; margin-bottom: 2rem; background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
-.tool-header h1 { font-size: 2.5rem; color: #4f46e5; margin-bottom: 0.5rem; }
-.tool-header p { color: #666; font-size: 1.1rem; }
-.ad-container, .ad-placeholder { background: #f9f9f9; border: 2px dashed #ddd; padding: 2rem; text-align: center; margin: 2rem 0; border-radius: 8px; color: #999; }
-.tool-content { background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); margin-bottom: 2rem; }
-.form-group { margin-bottom: 1.5rem; }
-.form-group label { display: block; margin-bottom: 0.5rem; font-weight: 600; color: #333; }
-.form-group input, .form-group textarea, .form-group select { width: 100%; padding: 0.75rem; border: 2px solid #e5e5e5; border-radius: 8px; font-size: 1rem; font-family: inherit; transition: border-color 0.3s; }
-.form-group input:focus, .form-group textarea:focus, .form-group select:focus { outline: none; border-color: #4f46e5; }
-.form-group textarea { min-height: 150px; resize: vertical; }
-.btn { padding: 0.75rem 2rem; background: #4f46e5; color: white; border: none; border-radius: 8px; font-size: 1rem; font-weight: 600; cursor: pointer; transition: background 0.3s; text-decoration: none; display: inline-block; }
-.btn:hover { background: #4338ca; }
-.btn-secondary { background: #06b6d4; }
-.btn-group { display: flex; gap: 1rem; flex-wrap: wrap; }
-.result-box { background: #f9f9f9; padding: 1.5rem; border-radius: 8px; margin-top: 1.5rem; border: 2px solid #e5e5e5; }
-.result-box h3 { margin-bottom: 1rem; color: #4f46e5; }
-.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1rem; margin-top: 1rem; }
-.stat-item { background: white; padding: 1rem; border-radius: 8px; text-align: center; }
-.stat-value { font-size: 2rem; font-weight: 700; color: #4f46e5; }
-.stat-label { color: #666; font-size: 0.875rem; }
-.seo-content { background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); margin: 2rem 0; }
-.seo-content h2 { color: #333; margin-bottom: 1rem; }
-.seo-content h3 { color: #4f46e5; margin: 1.5rem 0 1rem; }
-.seo-content p { margin-bottom: 1rem; line-height: 1.8; color: #666; }
-.seo-content ul { margin: 1rem 0 1rem 2rem; }
-.seo-content li { margin-bottom: 0.5rem; color: #666; }
-.faq-section { background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); margin-top: 2rem; }
-.faq-section h2 { font-size: 2rem; margin-bottom: 2rem; color: #333; }
-.faq-item { margin-bottom: 1.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid #e5e5e5; }
-.faq-item:last-child { border-bottom: none; }
-.faq-item h3 { color: #4f46e5; margin-bottom: 0.5rem; font-size: 1.25rem; }
-.faq-item p { color: #666; line-height: 1.6; }
-footer { background: #333; color: white; padding: 3rem 0 1rem; margin-top: 4rem; }
-.footer-content { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-bottom: 2rem; }
-.footer-section h4 { margin-bottom: 1rem; font-size: 1.25rem; }
-.footer-section ul { list-style: none; }
-.footer-section ul li { margin-bottom: 0.5rem; }
-.footer-section a { color: rgba(255, 255, 255, 0.8); text-decoration: none; transition: color 0.3s; }
-.footer-section a:hover { color: white; }
-.footer-bottom { text-align: center; padding-top: 2rem; border-top: 1px solid rgba(255, 255, 255, 0.1); color: rgba(255, 255, 255, 0.6); }
-@media (max-width: 768px) { .header-content { flex-direction: column; gap: 1rem; } nav { gap: 1rem; } .btn-group { flex-direction: column; } .btn { width: 100%; } .tool-header h1 { font-size: 2rem; } }
+        body { font-family: Arial, sans-serif; margin: 0; padding: 20px; background: #f0f0f0; }
+        .container { max-width: 800px; margin: 0 auto; }
+        header { background: white; padding: 20px; border-radius: 10px; margin-bottom: 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        .logo { color: #4f46e5; font-size: 24px; font-weight: bold; }
+        nav { margin-top: 10px; }
+        nav a { color: #333; text-decoration: none; margin-right: 20px; }
+        nav a:hover { color: #4f46e5; }
+        .tool-box { background: white; padding: 30px; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        h1 { color: #4f46e5; text-align: center; margin-bottom: 10px; }
+        p { text-align: center; color: #666; margin-bottom: 30px; }
+        input { width: 100%; padding: 15px; border: 2px solid #ddd; border-radius: 5px; font-size: 16px; margin-bottom: 15px; }
+        input:focus { border-color: #4f46e5; outline: none; }
+        .btn { padding: 15px 30px; background: #4f46e5; color: white; border: none; border-radius: 5px; cursor: pointer; font-size: 16px; width: 100%; }
+        .btn:hover { background: #3f36d4; }
+        #result { margin-top: 30px; padding: 20px; background: #f8f9fa; border-radius: 10px; display: none; }
+        .emi-value { font-size: 36px; font-weight: bold; color: #4f46e5; text-align: center; }
+        .details { margin-top: 20px; }
+        .detail-row { display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid #ddd; }
+        footer { background: #333; color: white; padding: 20px; border-radius: 10px; margin-top: 30px; text-align: center; }
     </style>
-    <link rel="canonical" href="https://toolstation.world/tools/emi.html">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="header-content">
-                <h1 class="logo">🛠️ <a href="../index.html" style="color: inherit; text-decoration: none;">ToolStation</a></h1>
-                <nav>
-                    <a href="../index.html">Home</a>
-                    <a href="../about.html">About</a>
-                    <a href="../contact.html">Contact</a>
-                </nav>
-            </div>
-        </div>
-    </header>
+    <div class="container">
+        <header>
+            <div class="logo">🛠️ ToolStation</div>
+            <nav>
+                <a href="../index.html">Home</a>
+                <a href="../about.html">About</a>
+                <a href="../contact.html">Contact</a>
+            </nav>
+        </header>
 
-    <main class="tool-container">
-        <div class="tool-header">
-            <h1>💰 Loan EMI Calculator</h1>
-            <p>Calculate monthly loan EMI, total interest, and payment breakdown for home loans, car loans, and personal loans.</p>
-        </div>
-
-        <div class="ad-container">
-            <div class="ad-placeholder">Advertisement</div>
-        </div>
-
-        <div class="tool-content">
-            <div class="form-group">
-                <label for="principal">Loan Amount ($):</label>
-                <input type="number" id="principal" placeholder="Enter loan amount" step="100">
-            </div>
-
-            <div class="form-group">
-                <label for="rate">Annual Interest Rate (%):</label>
-                <input type="number" id="rate" placeholder="Enter interest rate" step="0.01">
-            </div>
-
-            <div class="form-group">
-                <label for="tenure">Loan Tenure (Years):</label>
-                <input type="number" id="tenure" placeholder="Enter loan tenure" step="1">
-            </div>
-
-            <button class="btn" id="calculateEMI">Calculate EMI</button>
-
-            <div id="emiResult" style="display: none; margin-top: 2rem;"></div>
-        </div>
-
-        <div class="seo-content">
-            <h2>Understanding Loan EMI Calculations</h2>
-            <p>Equated Monthly Installment (EMI) is the fixed payment amount made by a borrower to a lender at a specified date each calendar month. EMI consists of both principal and interest components, with the proportion changing over the loan tenure. Early payments contain more interest, while later payments contain more principal repayment.</p>
+        <div class="tool-box">
+            <h1>💰 EMI Calculator</h1>
+            <p>Calculate your monthly loan EMI with detailed breakdown</p>
             
-            <p>Our EMI calculator uses the standard mathematical formula: EMI = [P x R x (1+R)^N]/[(1+R)^N-1], where P is the principal loan amount, R is the monthly interest rate, and N is the number of monthly installments. This formula ensures accurate calculations that match bank and financial institution standards.</p>
-
-            <h3>Components of EMI</h3>
-            <ul>
-                <li><strong>Principal Amount:</strong> The original loan amount borrowed from the lender</li>
-                <li><strong>Interest Rate:</strong> The annual percentage rate charged by the lender, converted to monthly rate for calculations</li>
-                <li><strong>Loan Tenure:</strong> The total time period for loan repayment, typically expressed in years</li>
-                <li><strong>Monthly EMI:</strong> The fixed amount paid each month throughout the loan tenure</li>
-                <li><strong>Total Interest:</strong> The total interest paid over the entire loan duration</li>
-                <li><strong>Total Amount:</strong> The sum of principal and total interest paid</li>
-            </ul>
-
-            <h3>Types of Loans and EMI Applications</h3>
-            <p>Home loans typically have the longest tenure (15-30 years) and lowest interest rates due to property collateral. EMI calculations help determine affordability and compare different loan offers. Consider property taxes, insurance, and maintenance costs alongside EMI when budgeting for home purchases.</p>
-
-            <p>Car loans usually have shorter tenures (3-7 years) with moderate interest rates. EMI planning helps choose between different vehicle options and financing terms. Factor in insurance, maintenance, and depreciation when calculating total vehicle ownership costs beyond EMI payments.</p>
-
-            <p>Personal loans offer flexibility but typically have higher interest rates and shorter tenures (1-5 years). EMI calculations help assess affordability for debt consolidation, medical expenses, or major purchases. Ensure EMI payments fit comfortably within monthly budget constraints.</p>
-
-            <p>Business loans vary widely in terms and rates based on business type and creditworthiness. EMI planning helps entrepreneurs understand cash flow requirements and plan business finances accordingly. Consider seasonal business variations when committing to fixed EMI payments.</p>
-
-            <h3>Factors Affecting EMI Amounts</h3>
-            <p>Interest rates significantly impact EMI amounts and total interest paid. Even small rate differences compound over long loan tenures, resulting in substantial savings or additional costs. Compare rates from multiple lenders and consider both fixed and floating rate options based on market conditions and personal risk tolerance.</p>
-
-            <p>Loan tenure directly affects EMI amounts - longer tenures reduce monthly EMI but increase total interest paid. Shorter tenures increase monthly EMI but reduce total interest costs. Choose tenure based on monthly budget capacity and total cost considerations.</p>
-
-            <p>Down payment amounts affect the principal loan requirement. Higher down payments reduce loan amounts, resulting in lower EMI and total interest costs. Balance down payment amounts with liquidity needs and investment opportunities for optimal financial planning.</p>
-
-            <h3>EMI Planning and Financial Management</h3>
-            <p>Financial experts recommend keeping total EMI payments below 40-50% of monthly income to maintain healthy financial ratios. This ensures adequate funds for other expenses, savings, and emergency situations. Consider all existing EMI commitments when taking new loans.</p>
-
-            <p>Create comprehensive budgets that account for EMI payments alongside other fixed and variable expenses. Include provisions for interest rate changes if choosing floating rate loans. Maintain emergency funds equivalent to 6-12 months of EMI payments for financial security.</p>
-
-            <p>Consider prepayment options to reduce total interest costs. Many loans allow partial prepayments that reduce principal amounts and subsequent EMI or tenure. Evaluate prepayment penalties against interest savings to make informed decisions about early loan repayment.</p>
-
-            <h3>EMI Optimization Strategies</h3>
-            <p>Compare loan offers from multiple lenders including banks, credit unions, and online lenders. Consider processing fees, prepayment penalties, and other charges alongside interest rates for total cost comparison. Negotiate terms based on creditworthiness and existing banking relationships.</p>
-
-            <p>Improve credit scores before applying for loans to qualify for better interest rates. Pay existing debts on time, maintain low credit utilization, and avoid new credit inquiries before loan applications. Higher credit scores can result in significantly lower interest rates and EMI amounts.</p>
-
-            <p>Consider loan tenure optimization based on life stage and financial goals. Younger borrowers might choose longer tenures for lower EMI, while those nearing retirement might prefer shorter tenures to become debt-free sooner. Align loan terms with career and income projections.</p>
-
-            <h3>Digital Tools and Financial Planning</h3>
-            <p>EMI calculators provide instant calculations for financial planning and loan comparison. Use multiple scenarios to understand how different loan amounts, rates, and tenures affect monthly payments and total costs. This helps make informed borrowing decisions aligned with financial capabilities.</p>
-
-            <p>Integrate EMI planning with broader financial goals including savings, investments, and retirement planning. Ensure loan commitments don't compromise long-term financial security or prevent achievement of other important financial objectives.</p>
-        </div>
-
-        <div class="faq-section">
-            <h2>Frequently Asked Questions</h2>
-            <div class="faq-item">
-                <h3>What percentage of income should go toward EMI?</h3>
-                <p>Financial experts recommend keeping total EMI payments below 40-50% of your monthly income. This ensures you have adequate funds for other expenses, savings, and emergencies while maintaining a healthy debt-to-income ratio.</p>
-            </div>
-            <div class="faq-item">
-                <h3>Should I choose a longer or shorter loan tenure?</h3>
-                <p>Longer tenures result in lower monthly EMI but higher total interest costs. Shorter tenures mean higher EMI but lower total interest. Choose based on your monthly budget capacity and preference for total cost versus monthly affordability.</p>
-            </div>
-            <div class="faq-item">
-                <h3>How does interest rate affect my EMI?</h3>
-                <p>Interest rates significantly impact both EMI amounts and total interest paid. Even a 0.5% rate difference can result in thousands of dollars in savings over a long-term loan. Always compare rates from multiple lenders before deciding.</p>
-            </div>
-            <div class="faq-item">
-                <h3>Can I prepay my loan to reduce EMI?</h3>
-                <p>Most loans allow prepayment, which reduces the principal amount. You can typically choose to either reduce your EMI amount or shorten the loan tenure. Check for prepayment penalties and calculate the benefits before making additional payments.</p>
-            </div>
-            <div class="faq-item">
-                <h3>What happens if I miss an EMI payment?</h3>
-                <p>Missing EMI payments can result in late fees, penalty interest, and negative impact on your credit score. Contact your lender immediately if you anticipate payment difficulties - many offer temporary relief options or restructuring possibilities.</p>
-            </div>
-        </div>
-    </main>
-
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h4>ToolStation.world</h4>
-                    <p>Your go-to destination for free online tools.</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="../about.html">About</a></li>
-                        <li><a href="../contact.html">Contact</a></li>
-                        <li><a href="../privacy.html">Privacy Policy</a></li>
-                        <li><a href="../terms.html">Terms of Service</a></li>
-                    </ul>
+            <input type="number" id="loanAmount" placeholder="Loan Amount" step="1000">
+            <input type="number" id="interestRate" placeholder="Interest Rate (% per annum)" step="0.1">
+            <input type="number" id="loanTenure" placeholder="Loan Tenure (months)" step="1">
+            
+            <button class="btn" onclick="calculateEMI()">Calculate EMI</button>
+            
+            <div id="result">
+                <div class="emi-value" id="emiValue"></div>
+                <div class="details">
+                    <div class="detail-row">
+                        <span>Total Interest:</span>
+                        <span id="totalInterest"></span>
+                    </div>
+                    <div class="detail-row">
+                        <span>Total Amount:</span>
+                        <span id="totalAmount"></span>
+                    </div>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 ToolStation.world. All rights reserved.</p>
-            </div>
         </div>
-    </footer>
 
-    <script src../assets/main.js"></script>
+        <footer>
+            <p>&copy; 2024 ToolStation.world. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script>
+        function calculateEMI() {
+            const principal = parseFloat(document.getElementById('loanAmount').value);
+            const rate = parseFloat(document.getElementById('interestRate').value) / 12 / 100;
+            const tenure = parseFloat(document.getElementById('loanTenure').value);
+            
+            if (!principal || !rate || !tenure) {
+                alert('Please fill all fields');
+                return;
+            }
+            
+            const emi = (principal * rate * Math.pow(1 + rate, tenure)) / (Math.pow(1 + rate, tenure) - 1);
+            const totalAmount = emi * tenure;
+            const totalInterest = totalAmount - principal;
+            
+            document.getElementById('emiValue').textContent = '₹' + emi.toFixed(0);
+            document.getElementById('totalInterest').textContent = '₹' + totalInterest.toFixed(0);
+            document.getElementById('totalAmount').textContent = '₹' + totalAmount.toFixed(0);
+            document.getElementById('result').style.display = 'block';
+        }
+    </script>
 </body>
 </html>
-
-

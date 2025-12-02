@@ -1,147 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><base href="../">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Free QR code generator. Create QR codes from text, URLs, phone numbers, and more. Download high-quality QR codes instantly.">
-    <meta name="keywords" content="QR code generator, QR code creator, free QR codes, generate QR code, QR code maker">
-    <title>Free QR Code Generator - Create QR Codes Instantly | ToolStation.world</title>
-    <style>* { margin: 0; padding: 0; box-sizing: border-box; }body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; color: #333; background: #f5f5f5; }.container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }header { background: white; box-shadow: 0 2px 10px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 100; }.header-content { display: flex; justify-content: space-between; align-items: center; padding: 1rem 0; }.logo { font-size: 1.5rem; font-weight: 700; color: #4f46e5; }.logo a { color: inherit; text-decoration: none; }nav { display: flex; gap: 2rem; }nav a { color: #333; text-decoration: none; font-weight: 500; transition: color 0.3s; }nav a:hover { color: #4f46e5; }.tool-container { max-width: 800px; margin: 2rem auto; padding: 0 20px; }.tool-header { text-align: center; margin-bottom: 2rem; background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }.tool-header h1 { font-size: 2.5rem; color: #4f46e5; margin-bottom: 0.5rem; }.tool-header p { color: #666; font-size: 1.1rem; }.ad-container, .ad-placeholder { background: #f9f9f9; border: 2px dashed #ddd; padding: 2rem; text-align: center; margin: 2rem 0; border-radius: 8px; color: #999; }.tool-content { background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); margin-bottom: 2rem; }.form-group { margin-bottom: 1.5rem; }.form-group label { display: block; margin-bottom: 0.5rem; font-weight: 600; color: #333; }.form-group input, .form-group textarea, .form-group select { width: 100%; padding: 0.75rem; border: 2px solid #e5e5e5; border-radius: 8px; font-size: 1rem; font-family: inherit; transition: border-color 0.3s; }.form-group input:focus, .form-group textarea:focus, .form-group select:focus { outline: none; border-color: #4f46e5; }.form-group textarea { min-height: 150px; resize: vertical; }.btn { padding: 0.75rem 2rem; background: #4f46e5; color: white; border: none; border-radius: 8px; font-size: 1rem; font-weight: 600; cursor: pointer; transition: background 0.3s; text-decoration: none; display: inline-block; }.btn:hover { background: #4338ca; }.btn-secondary { background: #06b6d4; }.btn-group { display: flex; gap: 1rem; flex-wrap: wrap; }.result-box { background: #f9f9f9; padding: 1.5rem; border-radius: 8px; margin-top: 1.5rem; border: 2px solid #e5e5e5; }.result-box h3 { margin-bottom: 1rem; color: #4f46e5; }.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1rem; margin-top: 1rem; }.stat-item { background: white; padding: 1rem; border-radius: 8px; text-align: center; }.stat-value { font-size: 2rem; font-weight: 700; color: #4f46e5; }.stat-label { color: #666; font-size: 0.875rem; }.seo-content { background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); margin: 2rem 0; }.seo-content h2 { color: #333; margin-bottom: 1rem; }.seo-content h3 { color: #4f46e5; margin: 1.5rem 0 1rem; }.seo-content p { margin-bottom: 1rem; line-height: 1.8; color: #666; }.seo-content ul { margin: 1rem 0 1rem 2rem; }.seo-content li { margin-bottom: 0.5rem; color: #666; }.faq-section { background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); margin-top: 2rem; }.faq-section h2 { font-size: 2rem; margin-bottom: 2rem; color: #333; }.faq-item { margin-bottom: 1.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid #e5e5e5; }.faq-item:last-child { border-bottom: none; }.faq-item h3 { color: #4f46e5; margin-bottom: 0.5rem; font-size: 1.25rem; }.faq-item p { color: #666; line-height: 1.6; }#qrcode { display: flex; justify-content: center; margin-top: 1rem; }#qrcode canvas { border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }footer { background: #333; color: white; padding: 3rem 0 1rem; margin-top: 4rem; }.footer-content { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-bottom: 2rem; }.footer-section h4 { margin-bottom: 1rem; font-size: 1.25rem; }.footer-section ul { list-style: none; }.footer-section ul li { margin-bottom: 0.5rem; }.footer-section a { color: rgba(255, 255, 255, 0.8); text-decoration: none; transition: color 0.3s; }.footer-section a:hover { color: white; }.footer-bottom { text-align: center; padding-top: 2rem; border-top: 1px solid rgba(255, 255, 255, 0.1); color: rgba(255, 255, 255, 0.6); }.text-center { text-align: center; }.hidden { display: none; }@media (max-width: 768px) { .header-content { flex-direction: column; gap: 1rem; } nav { gap: 1rem; } .btn-group { flex-direction: column; } .btn { width: 100%; } .tool-header h1 { font-size: 2rem; } }</style>
-    <link rel="canonical" href="https://toolstation.world/tools/qr.html">
+    <title>QR Code Generator | ToolStation.world</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 20px; background: #f0f0f0; }
+        .container { max-width: 800px; margin: 0 auto; }
+        header { background: white; padding: 20px; border-radius: 10px; margin-bottom: 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        .logo { color: #4f46e5; font-size: 24px; font-weight: bold; }
+        nav { margin-top: 10px; }
+        nav a { color: #333; text-decoration: none; margin-right: 20px; }
+        nav a:hover { color: #4f46e5; }
+        .tool-box { background: white; padding: 30px; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        h1 { color: #4f46e5; text-align: center; margin-bottom: 10px; }
+        p { text-align: center; color: #666; margin-bottom: 30px; }
+        textarea { width: 100%; height: 120px; padding: 15px; border: 2px solid #ddd; border-radius: 5px; font-size: 16px; }
+        textarea:focus { border-color: #4f46e5; outline: none; }
+        select { width: 100%; padding: 15px; border: 2px solid #ddd; border-radius: 5px; font-size: 16px; margin-top: 15px; }
+        select:focus { border-color: #4f46e5; outline: none; }
+        .btn { padding: 15px 30px; background: #4f46e5; color: white; border: none; border-radius: 5px; cursor: pointer; font-size: 16px; margin-top: 20px; width: 100%; }
+        .btn:hover { background: #3f36d4; }
+        #qrcode { text-align: center; margin-top: 30px; }
+        footer { background: #333; color: white; padding: 20px; border-radius: 10px; margin-top: 30px; text-align: center; }
+    </style>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="header-content">
-                <h1 class="logo">🛠️ <a href="../index.html" style="color: inherit; text-decoration: none;">ToolStation</a></h1>
-                <nav>
-                    <a href="../index.html">Home</a>
-                    <a href="../about.html">About</a>
-                    <a href="../contact.html">Contact</a>
-                </nav>
-            </div>
-        </div>
-    </header>
+    <div class="container">
+        <header>
+            <div class="logo">🛠️ ToolStation</div>
+            <nav>
+                <a href="../index.html">Home</a>
+                <a href="../about.html">About</a>
+                <a href="../contact.html">Contact</a>
+            </nav>
+        </header>
 
-    <main class="tool-container">
-        <div class="tool-header">
+        <div class="tool-box">
             <h1>📱 QR Code Generator</h1>
-            <p>Generate QR codes from text, URLs, phone numbers, or any data instantly. Download high-quality QR codes for free.</p>
-        </div>
-
-        <div class="ad-container">
-            <div class="ad-placeholder">Advertisement</div>
-        </div>
-
-        <div class="tool-content">
-            <div class="form-group">
-                <label for="qrText">Enter text, URL, or data:</label>
-                <textarea id="qrText" placeholder="Enter text, URL, phone number, or any data to generate QR code..."></textarea>
-            </div>
-
-            <div class="form-group">
-                <label for="qrSize">QR Code Size:</label>
-                <select id="qrSize">
-                    <option value="200">200x200 pixels</option>
-                    <option value="300" selected>300x300 pixels</option>
-                    <option value="400">400x400 pixels</option>
-                    <option value="500">500x500 pixels</option>
-                </select>
-            </div>
-
-            <button class="btn" id="generateQR">Generate QR Code</button>
-
-            <div id="qrcode" class="text-center" style="margin-top: 2rem;"></div>
-        </div>
-
-        <div class="seo-content">
-            <h2>Professional QR Code Generator</h2>
-            <p>Our QR code generator creates high-quality, scannable QR codes from any text, URL, phone number, email address, or data you provide. QR codes (Quick Response codes) are versatile tools that bridge the gap between physical and digital worlds, allowing users to quickly access information by scanning with their smartphone cameras.</p>
+            <p>Generate QR codes from text, URLs, or any data instantly</p>
             
-            <p>Whether you're a business owner creating marketing materials, an event organizer sharing contact information, a restaurant owner providing digital menus, or an individual sharing personal details, our QR code generator provides professional-quality results that work reliably across all QR code scanning apps and devices.</p>
-
-            <h3>Versatile QR Code Applications</h3>
-            <ul>
-                <li><strong>Website URLs:</strong> Direct users to your website, landing pages, or specific web content with a simple scan</li>
-                <li><strong>Contact Information:</strong> Share phone numbers, email addresses, or complete vCard contact details</li>
-                <li><strong>Social Media:</strong> Link to Facebook pages, Instagram profiles, LinkedIn accounts, or other social platforms</li>
-                <li><strong>WiFi Access:</strong> Allow guests to connect to your WiFi network without typing complex passwords</li>
-                <li><strong>Event Information:</strong> Share event details, calendar invites, or location information</li>
-                <li><strong>Product Information:</strong> Link to product pages, specifications, or instructional videos</li>
-                <li><strong>Payment Links:</strong> Direct customers to payment pages or digital wallets</li>
-                <li><strong>App Downloads:</strong> Link directly to app store pages for easy mobile app installation</li>
-            </ul>
-
-            <h3>Business and Marketing Applications</h3>
-            <p>Businesses use QR codes to enhance customer engagement and streamline information sharing. Restaurants place QR codes on tables to provide digital menus, reducing physical contact and allowing easy menu updates. Retail stores use them for product information, customer reviews, and promotional offers.</p>
-
-            <p>Marketing campaigns benefit from QR codes on print advertisements, business cards, brochures, and packaging. They provide measurable engagement metrics and create seamless transitions from offline to online experiences. Real estate agents use them on property signs to share virtual tours and detailed listings.</p>
-
-            <p>Event organizers use QR codes for ticket validation, attendee check-ins, and sharing event schedules or speaker information. Educational institutions use them for course materials, assignment submissions, and campus navigation. Healthcare providers use them for appointment scheduling and patient information access.</p>
-
-            <h3>Technical Features and Quality</h3>
-            <p>Our generator creates QR codes using industry-standard encoding that ensures maximum compatibility with all QR code readers and smartphone cameras. The codes include error correction capabilities, meaning they remain scannable even if partially damaged or obscured.</p>
-
-            <p>Generated QR codes are provided in high-resolution PNG format, perfect for both digital use and high-quality printing. The scalable vector format ensures crisp, clear codes at any size, from business cards to billboards. The black and white design provides optimal contrast for reliable scanning in various lighting conditions.</p>
-
-            <p>All QR code generation happens locally in your browser using advanced JavaScript libraries, ensuring your data remains private and secure. No information is transmitted to external servers, making it safe for sensitive business information, personal details, or confidential data.</p>
-
-            <h3>Best Practices for QR Code Usage</h3>
-            <p>For optimal scanning results, ensure QR codes are large enough to scan easily - typically at least 2x2 centimeters for print materials. Provide adequate white space around the code to prevent scanning interference. Test codes with multiple devices and scanning apps before final use.</p>
-
-            <p>Include clear instructions or call-to-action text near QR codes, such as "Scan for menu" or "Scan to visit website." Consider the context where codes will be scanned - ensure adequate lighting and accessible positioning for users of all abilities.</p>
+            <textarea id="qrText" placeholder="Enter text, URL, or data to generate QR code..."></textarea>
+            
+            <select id="qrSize">
+                <option value="200">200x200 pixels</option>
+                <option value="300" selected>300x300 pixels</option>
+                <option value="400">400x400 pixels</option>
+                <option value="500">500x500 pixels</option>
+            </select>
+            
+            <button class="btn" onclick="generateQR()">Generate QR Code</button>
+            
+            <div id="qrcode"></div>
         </div>
 
-        <div class="faq-section">
-            <h2>Frequently Asked Questions</h2>
-            <div class="faq-item">
-                <h3>What types of data can I encode in QR codes?</h3>
-                <p>You can encode virtually any text-based data including URLs, plain text, phone numbers, email addresses, SMS messages, WiFi credentials, contact information (vCard), calendar events, and geographic coordinates. The tool automatically optimizes encoding for the best results.</p>
-            </div>
-            <div class="faq-item">
-                <h3>How large should QR codes be for printing?</h3>
-                <p>For reliable scanning, QR codes should be at least 2x2 centimeters (0.8x0.8 inches) when printed. Larger codes are easier to scan, especially for older smartphones or in poor lighting conditions. Our generator provides multiple size options suitable for various applications.</p>
-            </div>
-            <div class="faq-item">
-                <h3>Do QR codes expire or stop working?</h3>
-                <p>QR codes themselves never expire - they're simply encoded data. However, if your QR code links to a URL, that website must remain active for the code to work. For static content like text or contact information, QR codes work indefinitely.</p>
-            </div>
-            <div class="faq-item">
-                <h3>Can I customize the appearance of QR codes?</h3>
-                <p>Our generator creates standard black and white QR codes optimized for maximum compatibility and scanning reliability. While colored or stylized QR codes are possible, standard black and white codes provide the best scanning success rate across all devices.</p>
-            </div>
-            <div class="faq-item">
-                <h3>Are the QR codes generated secure and private?</h3>
-                <p>Yes! All QR code generation happens entirely in your browser - no data is sent to our servers or stored anywhere. Your information remains completely private and secure. The tool works offline once loaded, ensuring maximum privacy protection.</p>
-            </div>
-        </div>
-    </main>
-
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h4>ToolStation.world</h4>
-                    <p>Your go-to destination for free online tools.</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="../about.html">About</a></li>
-                        <li><a href="../contact.html">Contact</a></li>
-                        <li><a href="../privacy.html">Privacy Policy</a></li>
-                        <li><a href="../terms.html">Terms of Service</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 ToolStation.world. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
+        <footer>
+            <p>&copy; 2024 ToolStation.world. All rights reserved.</p>
+        </footer>
+    </div>
 
     <script src="../assets/qrcode.min.js"></script>
-    <script src="../assets/main.js"></script>
+    <script>
+        function generateQR() {
+            const text = document.getElementById('qrText').value;
+            const size = document.getElementById('qrSize').value;
+            const qrCodeDiv = document.getElementById('qrcode');
+            
+            if (!text.trim()) {
+                alert('Please enter some text or URL');
+                return;
+            }
+            
+            qrCodeDiv.innerHTML = '';
+            
+            const qr = qrcode(0, 'M');
+            qr.addData(text);
+            qr.make();
+            
+            qrCodeDiv.innerHTML = qr.createImgTag(4);
+        }
+    </script>
 </body>
 </html>
-
