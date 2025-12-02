@@ -1,0 +1,39 @@
+# Robots.txt for ToolStation.world
+# Updated: December 2024
+
+# Allow all crawlers to access all content
+User-agent: *
+Allow: /
+
+# Disallow crawling of admin or private directories (if any)
+# Disallow: /admin/
+# Disallow: /private/
+
+# Allow specific important files
+Allow: /assets/
+Allow: /tools/
+Allow: /sitemap.xml
+Allow: /ads.txt
+
+# Crawl delay (optional - remove if causing issues)
+# Crawl-delay: 1
+
+# Sitemaps
+Sitemap: https://toolstation.world/sitemap.xml
+
+# Additional directives for major search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+# Social media crawlers
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /

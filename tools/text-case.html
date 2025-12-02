@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Free text case converter tool. Convert text to uppercase, lowercase, title case, sentence case, and more. Instant conversion with copy functionality.">
+    <meta name="keywords" content="text case converter, uppercase, lowercase, title case, sentence case, capitalize text, text transformation">
+    <title>Free Text Case Converter - Uppercase, Lowercase, Title Case | ToolStation.world</title>
+    <link rel="stylesheet" href="/assets/style.css">
+    <link rel="canonical" href="https://toolstation.world/tools/text-case.html">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <h1 class="logo">🛠️ <a href="/" style="color: inherit; text-decoration: none;">ToolStation</a></h1>
+                <nav>
+                    <a href="/">Home</a>
+                    <a href="/about.html">About</a>
+                    <a href="/contact.html">Contact</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="tool-container">
+        <div class="tool-header">
+            <h1>🔤 Text Case Converter</h1>
+            <p>Convert text to uppercase, lowercase, title case, sentence case, and more formats instantly.</p>
+        </div>
+
+        <div class="ad-container">
+            <div class="ad-placeholder">Advertisement</div>
+        </div>
+
+        <div class="tool-content">
+            <div class="form-group">
+                <label for="caseText">Enter your text:</label>
+                <textarea id="caseText" placeholder="Type or paste your text here..."></textarea>
+            </div>
+
+            <div class="btn-group">
+                <button class="btn" onclick="convertCase('upper')">UPPERCASE</button>
+                <button class="btn" onclick="convertCase('lower')">lowercase</button>
+                <button class="btn" onclick="convertCase('title')">Title Case</button>
+                <button class="btn" onclick="convertCase('sentence')">Sentence case</button>
+                <button class="btn" onclick="convertCase('capitalize')">Capitalize Each Word</button>
+                <button class="btn" onclick="convertCase('alternate')">aLtErNaTiNg CaSe</button>
+            </div>
+
+            <div class="btn-group" style="margin-top: 1rem;">
+                <button class="btn btn-secondary" onclick="copyText()">Copy Text</button>
+                <button class="btn btn-secondary" onclick="clearText()">Clear</button>
+            </div>
+        </div>
+
+        <div class="seo-content">
+            <h2>Professional Text Case Converter Tool</h2>
+            <p>Our text case converter is an essential tool for writers, editors, content creators, and anyone who needs to quickly change the capitalization of text. Whether you're formatting titles, preparing content for different platforms, or standardizing text formatting, our tool provides instant, accurate conversions with just one click.</p>
+            
+            <p>The tool supports multiple case conversion formats including uppercase (ALL CAPS), lowercase (all small letters), title case (First Letter Of Each Word Capitalized), sentence case (First letter capitalized, rest lowercase), capitalize each word, and alternating case for creative purposes. Each conversion maintains the original spacing and punctuation while only changing letter capitalization.</p>
+
+            <h3>Available Text Case Formats</h3>
+            <ul>
+                <li><strong>UPPERCASE:</strong> Converts all letters to capital letters, perfect for headings, emphasis, or meeting specific formatting requirements</li>
+                <li><strong>lowercase:</strong> Converts all letters to small letters, useful for email addresses, URLs, or casual text formatting</li>
+                <li><strong>Title Case:</strong> Capitalizes the first letter of each word, ideal for book titles, article headlines, and formal document headings</li>
+                <li><strong>Sentence case:</strong> Capitalizes only the first letter of the first word, standard for regular sentences and paragraphs</li>
+                <li><strong>Capitalize Each Word:</strong> Similar to title case but capitalizes every single word including articles and prepositions</li>
+                <li><strong>aLtErNaTiNg CaSe:</strong> Alternates between uppercase and lowercase letters for creative or decorative text effects</li>
+            </ul>
+
+            <h3>Perfect for Content Creators and Professionals</h3>
+            <p>Content creators use our tool to format headlines, social media posts, and article titles according to different style guides. Bloggers and journalists rely on it to quickly convert text between AP Style, Chicago Manual of Style, and other formatting standards. Social media managers use it to create eye-catching posts that stand out in feeds.</p>
+
+            <p>Students and academics find it invaluable for formatting research papers, essays, and citations according to MLA, APA, or Chicago style requirements. Business professionals use it to standardize document formatting, create consistent email signatures, and prepare presentations with properly formatted titles and headings.</p>
+
+            <p>Web developers and designers use the tool to quickly format text for websites, ensuring consistent capitalization across headers, navigation menus, and content sections. The tool saves time and reduces errors when working with large amounts of text that need formatting changes.</p>
+
+            <h3>Features and Benefits</h3>
+            <p>Our text case converter processes text instantly without requiring page reloads or server communication. The copy function allows you to quickly transfer converted text to your clipboard for use in other applications. The clear function lets you start fresh with new text without manually selecting and deleting existing content.</p>
+
+            <p>The tool preserves all original formatting including spaces, line breaks, and punctuation marks while only changing letter capitalization. This ensures your text structure remains intact while achieving the desired case format. The interface is intuitive and requires no technical knowledge - simply paste your text and click the desired conversion button.</p>
+
+            <p>All processing happens in your browser, ensuring your text remains private and secure. No data is sent to external servers, and the tool works offline once loaded. This makes it safe for sensitive content and ensures fast processing regardless of internet connection speed.</p>
+        </div>
+
+        <div class="faq-section">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <h3>What's the difference between Title Case and Capitalize Each Word?</h3>
+                <p>Title Case follows standard capitalization rules for titles, typically not capitalizing articles (a, an, the), short prepositions (in, on, at), and conjunctions (and, but, or) unless they're the first or last word. Capitalize Each Word capitalizes every single word regardless of its grammatical function.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Does the tool preserve formatting and punctuation?</h3>
+                <p>Yes! Our converter only changes letter capitalization while preserving all other formatting including spaces, line breaks, punctuation marks, numbers, and special characters. Your text structure remains completely intact.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Can I convert large amounts of text?</h3>
+                <p>Absolutely! There's no limit to the amount of text you can convert. The tool handles everything from single words to entire documents, processing them instantly regardless of length.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Is my text stored or saved anywhere?</h3>
+                <p>No, your text is completely private. All conversions happen in your browser using JavaScript - no data is sent to our servers or stored anywhere. You can use the tool with complete confidence for sensitive content.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Does this work for languages other than English?</h3>
+                <p>Yes! The tool works with any language that uses uppercase and lowercase letters, including accented characters. It properly handles international characters and maintains language-specific formatting rules.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>ToolStation.world</h4>
+                    <p>Your go-to destination for free online tools.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="/about.html">About</a></li>
+                        <li><a href="/contact.html">Contact</a></li>
+                        <li><a href="/privacy.html">Privacy Policy</a></li>
+                        <li><a href="/terms.html">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 ToolStation.world. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/assets/main.js"></script>
+</body>
+</html>

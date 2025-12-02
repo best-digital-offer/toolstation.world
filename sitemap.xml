@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+    <!-- Homepage -->
+    <url>
+        <loc>https://toolstation.world/</loc>
+        <lastmod>2024-12-20</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    
+    <!-- Main Pages -->
+    <url>
+        <loc>https://toolstation.world/about.html</loc>
+        <lastmod>2024-12-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://toolstation.world/contact.html</loc>
+        <lastmod>2024-12-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://toolstation.world/privacy.html</loc>
+        <lastmod>2024-12-20</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://toolstation.world/terms.html</loc>
+        <lastmod>2024-12-20</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    
+    <!-- Text Tools -->
+    <url>
+        <loc>https://toolstation.world/tools/word-counter.html</loc>
+        <lastmod>2024-12-20</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.95</priority>
+    </url>
+    <url>
+        <loc>https://toolstation.world/tools/text-case.html</loc>
+        <lastmod>2024-12-20</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+    <!-- Image Tools -->
+    <url>
+        <loc>https://toolstation.world/tools/image-compress.html</loc>
+        <lastmod>2024-12-20</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.95</priority>
+    </url>
+    <url>
+        <loc>https://toolstation.world/tools/jpg-png.html</loc>
+        <lastmod>2024-12-20</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://toolstation.world/tools/image-to-pdf.html</loc>
+        <lastmod>2024-12-20</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+    <!-- Calculators -->
+    <url>
+        <loc>https://toolstation.world/tools/bmi.html</loc>
+        <lastmod>2024-12-20</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://toolstation.world/tools/emi.html</loc>
+        <lastmod>2024-12-20</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+    <!-- Utility Tools -->
+    <url>
+        <loc>https://toolstation.world/tools/qr.html</loc>
+        <lastmod>2024-12-20</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.95</priority>
+    </url>
+    <url>
+        <loc>https://toolstation.world/tools/youtube-thumb.html</loc>
+        <lastmod>2024-12-20</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.85</priority>
+    </url>
+</urlset>
